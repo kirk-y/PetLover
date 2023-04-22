@@ -26,9 +26,6 @@ import java.util.List;
 
 public class Preload extends AppCompatActivity {
 
-    private ViewPager viewPager;
-    private FragmentPagerAdapter fragmentPagerAdapter;
-
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,8 +33,8 @@ public class Preload extends AppCompatActivity {
         setContentView(R.layout.activity_preload);
 
         // 初始化ViewPager和FragmentPagerAdapter
-        viewPager = findViewById(R.id.preload_fragment);
-        fragmentPagerAdapter = new MyPagerAdapter(getSupportFragmentManager());
+        ViewPager viewPager = findViewById(R.id.preload_fragment);
+        FragmentPagerAdapter fragmentPagerAdapter = new MyPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(fragmentPagerAdapter);
 
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {

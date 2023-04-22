@@ -72,4 +72,9 @@
     <string name="what_is_a_pet_lovers_app">What is a pet lovers app?\n\nPet lovers application is an application intended for pet lovers. This application has shop, addoption, veterinarian, and treatment features.</string>
     <string name="can_i_sell_my_pet">Can I sell my pet?</string>
     <string name="how_is_the_adoption_process">How is the adoption process?</string>
+    <string name="shop">Shop</string>
+    <string name="shop_info">Find the best product or pet</string>
+    <string name="shop_product">PRODUCT</string>
+    <string name="shop_pet">PET</string>
+    <string name="product">PRODUCT</string>
 </resources>
