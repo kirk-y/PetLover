@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".personal.PersonalHome">
+
+    <ImageView
+        android:id="@+id/personalHomeTopImage"
+        android:layout_width="500dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="-50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_top_image" />
+
+    <ImageView
+        android:id="@+id/personalPanel"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blue_panel" />
+
+    <ImageView
+        android:id="@+id/profile_bottom"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/personalPanel"
+        app:layout_constraintStart_toStartOf="@+id/personalPanel"
+        app:layout_constraintTop_toTopOf="@+id/personalPanel"
+        app:srcCompat="@drawable/white_circle" />
+
+    <ImageButton
+        android:id="@+id/profile_image"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:background="@color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_bottom"
+        app:layout_constraintEnd_toEndOf="@+id/profile_bottom"
+        app:layout_constraintStart_toStartOf="@+id/profile_bottom"
+        app:layout_constraintTop_toTopOf="@+id/profile_bottom"
+        app:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/Home_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/text_home_username"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/personalPanel"
+        app:layout_constraintStart_toEndOf="@+id/profile_bottom"
+        app:layout_constraintTop_toTopOf="@+id/personalPanel" />
+
+    <TextView
+        android:id="@+id/personal_home_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/profile"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/bnt_personal_home_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/about_apps"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:textAllCaps="false"
+        android:background="@drawable/shadow_rectangle"
+        android:gravity="center_vertical"
+        android:paddingStart="20sp"
+        android:text="@string/about_apps"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/personalPanel"
+        app:layout_constraintTop_toBottomOf="@+id/personalPanel"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/bnt_FAQ"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/shadow_rectangle"
+        android:gravity="center_vertical"
+        android:paddingStart="20sp"
+        android:text="@string/faq"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/personalPanel"
+        app:layout_constraintTop_toBottomOf="@+id/about_apps"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/privacy_policy"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/shadow_rectangle"
+        android:gravity="center_vertical"
+        android:paddingStart="20sp"
+        android:text="@string/privacy_policy"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/personalPanel"
+        app:layout_constraintTop_toBottomOf="@+id/bnt_FAQ"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/rating_apps"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/shadow_rectangle"
+        android:gravity="center_vertical"
+        android:paddingStart="20sp"
+        android:text="@string/rating_apps"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/personalPanel"
+        app:layout_constraintTop_toBottomOf="@+id/privacy_policy"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/shadow_rectangle"
+        android:gravity="center_vertical"
+        android:paddingStart="20sp"
+        android:text="@string/logout"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/personalPanel"
+        app:layout_constraintTop_toBottomOf="@+id/rating_apps"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="@string/version_app"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bnt_edit_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/transparent"
+        android:text="@string/edit_profile"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/personalPanel"
+        app:layout_constraintEnd_toEndOf="@+id/personalPanel"
+        app:layout_constraintTop_toTopOf="@+id/personalPanel" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
