@@ -108,4 +108,12 @@
     <string name="text_item1_info">The British Shorthair is a breed version of the traditional British domestic cat, with a distinctively stocky build, thick coat and broad face. The most recognized color variant is \"British Blue\", with a solid gray-blue coat, orange eyes, and a medium-sized tail.</string>
     <string name="itemInfo_chatSeller">Chat Seller</string>
     <string name="itemInfo_continue">Continue</string>
+    <string name="veterinarian_title">Veterinarian</string>
+    <string name="nearest_veterinarian">Nearest Veterinarian</string>
+    <string name="create_appointment">Create Appointment</string>
+    <string name="veterinarian">Veterinarian</string>
+    <string name="veterinarian_profile">Veterinarian Profile</string>
+    <string name="veterinarian_name">Jaxson Calzoni</string>
+    <string name="clinic_name">One Stop Clinic</string>
+    <string name="veterna_experience">Experience \n5 Years</string>
 </resources>

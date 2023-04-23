@@ -13,9 +13,13 @@
         android:theme="@style/Theme.Design.Light"
         tools:targetApi="31">
         <activity
-            android:name=".Functions.ItemInfo"
+            android:name=".Functions.veterinarian.VeterinarianInfo"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             android:exported="false" />
+        <activity
+            android:name=".Functions.ItemInfo"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".personal.FQA"
             android:exported="false"
