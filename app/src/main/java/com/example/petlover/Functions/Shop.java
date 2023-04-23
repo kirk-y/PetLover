@@ -8,6 +8,9 @@ import androidx.viewpager.widget.ViewPager;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.ImageButton;
 
 import com.example.petlover.Functions.shop.ShopPet;
 import com.example.petlover.Functions.shop.ShopProduct;
@@ -17,17 +20,29 @@ import com.example.petlover.LoginRegister.PreloadFragment.View2;
 import com.example.petlover.LoginRegister.PreloadFragment.View3;
 import com.example.petlover.R;
 
+import java.util.List;
+
 public class Shop extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
         setContentView(R.layout.activity_shop);
 
         // 初始化ViewPager和FragmentPagerAdapter
         @SuppressLint({"MissingInflatedId", "LocalSuppress"}) ViewPager viewPager = findViewById(R.id.shop_fragment);
         FragmentPagerAdapter fragmentPagerAdapter = new Shop.MyPagerAdapter(getSupportFragmentManager());
         viewPager.setAdapter(fragmentPagerAdapter);
+
+        ImageButton bnt_shop_back = findViewById(R.id.bnt_shop_back);
+        bnt_shop_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
     }
 
     private static class MyPagerAdapter extends FragmentPagerAdapter {

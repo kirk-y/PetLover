@@ -12,17 +12,434 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView27"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Pet"
-            android:textColor="@color/bnt_color"
-            android:textSize="50dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="60dp"
+                android:layout_height="30sp"
+                android:layout_margin="5sp"
+                android:background="@drawable/rounded_button"
+                android:text="All"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="30dp"
+                android:layout_height="30sp"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corners_10"
+                android:text="Cat"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="30dp"
+                android:layout_height="30sp"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corners_10"
+                android:text="Dog"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="40dp"
+                android:layout_height="30sp"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corners_10"
+                android:text="Turtle"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="40dp"
+                android:layout_height="30sp"
+                android:layout_margin="5sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corners_10"
+                android:text="bird"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/shop_kind_info"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView26">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imageButton2"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@color/transparent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/shop_pet1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView28"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:textStyle="bold"
+                                    android:text="@string/text_shop_pet1_name" />
+
+                                <TextView
+                                    android:id="@+id/textView29"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/text_shop_pet1_old" />
+
+                                <TextView
+                                    android:id="@+id/textView30"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/male" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/imageButton13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/transparent"
+                                    android:src="@drawable/love"
+                                    tools:ignore="RtlHardcoded" />
+
+                                <TextView
+                                    android:id="@+id/textView31"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/text_shop_pet1_price"
+                                    tools:ignore="RtlHardcoded" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imageButton3"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@color/transparent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/shop_pet2" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            tools:ignore="NestedWeights">
+
+                            <LinearLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView32"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:textStyle="bold"
+                                    android:text="@string/text_shop_pet2_name" />
+
+                                <TextView
+                                    android:id="@+id/textView33"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/text_shop_pet2_old" />
+
+                                <TextView
+                                    android:id="@+id/textView34"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/female" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/imageButton14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/transparent"
+                                    android:src="@drawable/love"
+                                    tools:ignore="RtlHardcoded" />
+
+                                <TextView
+                                    android:id="@+id/textView35"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/text_shop_pet2_price"
+                                    tools:ignore="RtlHardcoded" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imageButton4"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@color/transparent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/shop_pet3" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            tools:ignore="NestedWeights">
+
+                            <LinearLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/textView36"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:textStyle="bold"
+                                    android:text="@string/text_shop_pet3_name" />
+
+                                <TextView
+                                    android:id="@+id/textView37"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/text_shop_pet3_old" />
+
+                                <TextView
+                                    android:id="@+id/textView38"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/female" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0sp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <ImageButton
+                                    android:id="@+id/imageButton15"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@color/transparent"
+                                    android:src="@drawable/love"
+                                    tools:ignore="RtlHardcoded" />
+
+                                <TextView
+                                    android:id="@+id/textView39"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_gravity="right"
+                                    android:text="@string/text_shop_pet3_price"
+                                    tools:ignore="RtlHardcoded" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imageButton5"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="@color/transparent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/shop_pet4" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            tools:ignore="NestedWeights">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/textView40"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:textStyle="bold"
+                                        android:text="@string/text_shop_pet4_name" />
+
+                                    <TextView
+                                        android:id="@+id/textView41"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:text="@string/text_shop_pet4_old" />
+
+                                    <TextView
+                                        android:id="@+id/textView42"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="10dp"
+                                        android:text="@string/female" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0sp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <ImageButton
+                                        android:id="@+id/imageButton16"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="right"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:background="@color/transparent"
+                                        android:src="@drawable/love"
+                                        tools:ignore="RtlHardcoded" />
+
+                                    <TextView
+                                        android:id="@+id/textView43"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="right"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:text="@string/text_shop_pet4_price"
+                                        tools:ignore="RtlHardcoded" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
 </FrameLayout>
