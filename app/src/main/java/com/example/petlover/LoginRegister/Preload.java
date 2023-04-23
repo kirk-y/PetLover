@@ -20,6 +20,7 @@ import com.example.petlover.LoginRegister.PreloadFragment.View1;
 import com.example.petlover.LoginRegister.PreloadFragment.View2;
 import com.example.petlover.LoginRegister.PreloadFragment.View3;
 import com.example.petlover.R;
+import com.example.petlover.Welcome;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,6 +36,12 @@ public class Preload extends AppCompatActivity {
         setContentView(R.layout.activity_preload);
 
         instance = this;
+        try{
+            Welcome.instance.finish();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
 
         // 初始化ViewPager和FragmentPagerAdapter
         ViewPager viewPager = findViewById(R.id.preload_fragment);

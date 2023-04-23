@@ -26,7 +26,12 @@ public class Home extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         instance = this;
-        Welcome.instance.finish();
+        try{
+            Welcome.instance.finish();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
 
         @SuppressLint("WrongViewCast") ImageButton bnt_shop = findViewById(R.id.bnt_home_shop);
         bnt_shop.setOnClickListener(new View.OnClickListener() {
