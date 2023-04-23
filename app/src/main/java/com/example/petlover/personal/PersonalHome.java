@@ -9,6 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.example.petlover.Home;
+import com.example.petlover.LoginRegister.Login;
+import com.example.petlover.LoginRegister.Preload;
 import com.example.petlover.R;
 
 public class PersonalHome extends AppCompatActivity {
@@ -41,6 +44,17 @@ public class PersonalHome extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(PersonalHome.this, FQA.class);
                 startActivity(intent);
+            }
+        });
+
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button logout = findViewById(R.id.bnt_logout);
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PersonalHome.this, Preload.class);
+                startActivity(intent);
+                Home.instance.finish();
+                finish();
             }
         });
     }

@@ -27,6 +27,7 @@ public class Register extends AppCompatActivity {
                 Intent intent = new Intent(Register.this, VerifyIdentity.class);
                 startActivity(intent);
                 finish();
+                finish();
             }
         });
 

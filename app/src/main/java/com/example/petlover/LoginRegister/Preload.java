@@ -26,11 +26,15 @@ import java.util.List;
 
 public class Preload extends AppCompatActivity {
 
+    public static Preload instance;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_preload);
+
+        instance = this;
 
         // 初始化ViewPager和FragmentPagerAdapter
         ViewPager viewPager = findViewById(R.id.preload_fragment);
@@ -74,6 +78,14 @@ public class Preload extends AppCompatActivity {
             }
         });
 
+        Button bnt_preload_login = findViewById(R.id.bnt_preload_login);
+        bnt_preload_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Preload.this, Login.class);
+                startActivity(intent);
+            }
+        });
     }
     private static class MyPagerAdapter extends FragmentPagerAdapter {
 

@@ -79,7 +79,7 @@
         tools:ignore="SmallSp" />
 
     <Button
-        android:id="@+id/login_login_bnt"
+        android:id="@+id/bnt_login_login"
         android:layout_width="match_parent"
         android:layout_height="40sp"
         android:layout_marginStart="30sp"
@@ -100,7 +100,7 @@
         android:text="@string/login_other_way"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_login_bnt" />
+        app:layout_constraintTop_toBottomOf="@+id/bnt_login_login" />
 
     <View
         android:id="@+id/login_dec1"

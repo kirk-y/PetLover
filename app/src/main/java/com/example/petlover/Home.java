@@ -18,10 +18,15 @@ import com.example.petlover.personal.PersonalHome;
 
 public class Home extends AppCompatActivity {
 
+    public static Home instance;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        instance = this;
+        Welcome.instance.finish();
 
         @SuppressLint("WrongViewCast") ImageButton bnt_shop = findViewById(R.id.bnt_home_shop);
         bnt_shop.setOnClickListener(new View.OnClickListener() {
