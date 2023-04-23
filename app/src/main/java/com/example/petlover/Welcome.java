@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Window;
 
 import com.example.petlover.LoginRegister.Login;
+import com.example.petlover.LoginRegister.Preload;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -18,7 +19,7 @@ public class Welcome extends AppCompatActivity {
     TimerTask task=new TimerTask(){
         @Override
         public void run(){
-            final Intent localIntent=new Intent(Welcome.this, Login.class);
+            final Intent localIntent=new Intent(Welcome.this, Preload.class);
             startActivity(localIntent);
         }
     };

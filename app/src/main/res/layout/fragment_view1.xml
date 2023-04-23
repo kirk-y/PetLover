@@ -8,27 +8,43 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/preload_two_dags"
+                android:layout_width="300dp"
+                android:layout_height="280dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/tow_dogs" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/preload_text1"
+                android:textSize="20sp" />
+
+        </LinearLayout>
 
         <ImageView
-            android:id="@+id/preload_two_dags"
-            android:layout_width="300dp"
-            android:layout_height="280dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="100dp"
-            android:layout_marginEnd="30dp"
-            android:src="@drawable/tow_dogs" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:textSize="20sp"
-            android:text="@string/preload_text1" />
-    </LinearLayout>
+            android:id="@+id/imageView12"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:src="@drawable/choice_hint1"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
