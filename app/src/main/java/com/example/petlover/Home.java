@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 import com.example.petlover.Functions.Adoption;
+import com.example.petlover.Functions.ItemInfo;
 import com.example.petlover.Functions.Shop;
 import com.example.petlover.Functions.Treatment;
 import com.example.petlover.Functions.Veterinarian;
@@ -63,6 +64,16 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Home.this, PersonalHome.class);
+                startActivity(intent);
+            }
+        });
+
+        @SuppressLint({"WrongViewCast", "MissingInflatedId", "LocalSuppress"})
+        ImageButton bnt_home_pet1 = findViewById(R.id.bnt_home_pet1);
+        bnt_home_pet1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Home.this, ItemInfo.class);
                 startActivity(intent);
             }
         });

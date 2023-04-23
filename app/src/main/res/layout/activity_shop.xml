@@ -109,5 +109,19 @@
         android:windowSoftInputMode="stateHidden"
         app:layout_constraintTop_toBottomOf="@+id/editTextText" />
 
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/bnt_shop_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bnt_shop_back"
+        app:srcCompat="@drawable/ioc2"
+        tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

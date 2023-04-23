@@ -258,7 +258,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageButton8" />
 
     <ImageButton
-        android:id="@+id/imageButton10"
+        android:id="@+id/bnt_home_pet1"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginStart="30dp"
@@ -276,8 +276,8 @@
         android:layout_marginStart="15dp"
         android:background="@color/transparent"
         android:scaleType="fitXY"
-        app:layout_constraintStart_toEndOf="@+id/imageButton10"
-        app:layout_constraintTop_toTopOf="@+id/imageButton10"
+        app:layout_constraintStart_toEndOf="@+id/bnt_home_pet1"
+        app:layout_constraintTop_toTopOf="@+id/bnt_home_pet1"
         app:srcCompat="@drawable/cat2" />
 
     <TextView
@@ -287,8 +287,8 @@
         android:layout_marginTop="10dp"
         android:text="@string/home_pet1_name"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/imageButton10"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton10" />
+        app:layout_constraintStart_toStartOf="@+id/bnt_home_pet1"
+        app:layout_constraintTop_toBottomOf="@+id/bnt_home_pet1" />
 
     <TextView
         android:id="@+id/home_last_pet1_old"
@@ -345,8 +345,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@color/transparent"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton10"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton10"
+        app:layout_constraintEnd_toEndOf="@+id/bnt_home_pet1"
+        app:layout_constraintTop_toBottomOf="@+id/bnt_home_pet1"
         app:srcCompat="@drawable/love" />
 
     <ImageButton
