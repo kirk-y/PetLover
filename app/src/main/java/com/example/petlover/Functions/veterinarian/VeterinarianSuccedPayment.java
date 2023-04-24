@@ -28,8 +28,8 @@ public class VeterinarianSuccedPayment extends AppCompatActivity {
         bnt_veterinarian_to_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(VeterinarianSuccedPayment.this, Home.class);
-                startActivity(intent);
+//                Intent intent = new Intent(VeterinarianSuccedPayment.this, Home.class);
+//                startActivity(intent);
                 VeterinarianAppointment.instance.finish();
                 VeterinarianPaymentOrder.instance.finish();
                 VeterinarianInfo.instance.finish();
