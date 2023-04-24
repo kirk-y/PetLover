@@ -13,9 +13,17 @@
         android:theme="@style/Theme.Design.Light"
         tools:targetApi="31">
         <activity
-            android:name=".Functions.veterinarian.VeterinarianInfo"
+            android:name=".Functions.veterinarian.Veterinarian_Payment_Order"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             android:exported="false" />
+        <activity
+            android:name=".Functions.veterinarian.Appointment"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Functions.veterinarian.VeterinarianInfo"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
             android:name=".Functions.ItemInfo"
             android:exported="false"

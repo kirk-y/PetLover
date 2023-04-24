@@ -6,4 +6,7 @@
     <color name="viewBorderColor">#FF000000</color>
     <color name="bnt_color">#4594f6</color>
     <color name="transparent">#00000000</color>
+    <color name="red">#ef7b7b</color>
+    <color name="green">#39a166</color>
+    <color name="purple">#4f378b</color>
 </resources>
