@@ -19,7 +19,7 @@
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="70dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="130dp"
         android:layout_marginEnd="10dp"
@@ -29,8 +29,10 @@
         app:srcCompat="@drawable/white_rectangle_fulled" />
 
     <LinearLayout
+        android:id="@+id/HomeFunctionList"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="-5dp"
         android:foregroundGravity="center"
         android:gravity="center"
         android:orientation="horizontal"
@@ -131,8 +133,86 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/text_home_treatment"
+                android:text="@string/text_home_personalized"
                 android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/functionList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HomeFunctionList">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton20"
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:background="@color/transparent"
+                app:srcCompat="@drawable/bascktboll" />
+
+            <TextView
+                android:id="@+id/textView97"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Play" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton21"
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:background="@color/transparent"
+                app:srcCompat="@drawable/microphone" />
+
+            <TextView
+                android:id="@+id/textView98"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Voice" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageButton22"
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:background="@color/transparent"
+                app:srcCompat="@drawable/vedio" />
+
+            <TextView
+                android:id="@+id/textView99"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Video" />
         </LinearLayout>
 
     </LinearLayout>
@@ -209,7 +289,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="60dp"
         android:text="@string/Home_insight_for_you"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
@@ -218,7 +298,7 @@
         android:id="@+id/home_see_more1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="30dp"
         android:text="@string/see_more"
         app:layout_constraintEnd_toEndOf="parent"
@@ -228,10 +308,10 @@
         android:id="@+id/imageButton8"
         android:layout_width="275dp"
         android:layout_height="140dp"
-        android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
         android:background="@color/transparent"
         android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_home_insight"
         app:srcCompat="@drawable/home_insight1" />
@@ -261,7 +341,7 @@
         android:id="@+id/bnt_home_pet1"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="15dp"
         android:background="@color/transparent"
         android:scaleType="fitXY"
@@ -273,10 +353,10 @@
         android:id="@+id/imageButton9"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        android:layout_marginStart="15dp"
+        android:layout_marginEnd="40dp"
         android:background="@color/transparent"
         android:scaleType="fitXY"
-        app:layout_constraintStart_toEndOf="@+id/bnt_home_pet1"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/bnt_home_pet1"
         app:srcCompat="@drawable/cat2" />
 
@@ -358,4 +438,26 @@
         app:layout_constraintEnd_toEndOf="@+id/imageButton9"
         app:layout_constraintTop_toBottomOf="@+id/imageButton9"
         app:srcCompat="@drawable/love" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="293dp"
+        android:layout_height="186dp"
+        android:layout_marginStart="-10dp"
+        android:background="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton8"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButton8"
+        app:srcCompat="@drawable/home_insight1" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="142dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="-10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton9"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButton9"
+        app:srcCompat="@drawable/cat1" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
