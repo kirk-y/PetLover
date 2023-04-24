@@ -6,13 +6,12 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 import com.example.petlover.Functions.Adoption;
 import com.example.petlover.Functions.ItemInfo;
 import com.example.petlover.Functions.Shop;
-import com.example.petlover.Functions.Treatment;
+import com.example.petlover.Functions.DIY;
 import com.example.petlover.Functions.Veterinarian;
 import com.example.petlover.personal.PersonalHome;
 
@@ -64,7 +63,7 @@ public class Home extends AppCompatActivity {
         bnt_treatment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Home.this, Treatment.class);
+                Intent intent = new Intent(Home.this, DIY.class);
                 startActivity(intent);
             }
         });

@@ -13,6 +13,10 @@
         android:theme="@style/Theme.Design.Light"
         tools:targetApi="31">
         <activity
+            android:name=".Functions.diy.DiyCommunication"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+            android:exported="false" />
+        <activity
             android:name=".Functions.veterinarian.VeterinarianSuccedPayment"
             android:exported="false" />
         <activity
@@ -44,7 +48,7 @@
             android:exported="false"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity
-            android:name=".Functions.Treatment"
+            android:name=".Functions.DIY"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity

@@ -9,4 +9,6 @@
     <color name="red">#ef7b7b</color>
     <color name="green">#39a166</color>
     <color name="purple">#4f378b</color>
+    <color name="down_blue">#def0fb</color>
+    <color name="diy_card">#f7fbfe</color>
 </resources>

@@ -117,4 +117,5 @@
     <string name="clinic_name">One Stop Clinic</string>
     <string name="veterna_experience">Experience \n5 Years</string>
     <string name="text_home_personalized">DIY</string>
+    <string name="dialogue">该宠物猫饮水较多，运动较少且稀便\n\n可能原因： \n   1.疾病健康问题 \n   2.饮食问题 \n   3.运动问题 计划制定 \n\n   1.如果您的宠物猫患有健康问题，请 立即带它去看兽医，以获取准确的诊 断和治疗建议 \n   2.确保为您的宠物猫提供高质量的猫 粮和足够的水，以避免过多的盐分和 碳水化合物。 \n  3.确保您的宠物猫有足够的运动和娱 乐，例如玩具、活动和探险等，以避 免肥胖和运动能力下降。 \n  4.监测您的宠物猫的体重和便便情况 ，并记录任何变化。如果有任何不寻 常的症状，请及时与兽医联系。</string>
 </resources>
