@@ -12,10 +12,14 @@ import com.example.petlover.R;
 
 public class Veterinarian extends AppCompatActivity {
 
+    public static Veterinarian instance;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_veterinarian);
+
+        instance = this;
 
         ImageButton bnt_veterinarian_info = findViewById(R.id.bnt_veterinarian_info);
         bnt_veterinarian_info.setOnClickListener(new View.OnClickListener() {

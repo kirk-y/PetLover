@@ -4,6 +4,265 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Functions.veterinarian.Veterinarian_Payment_Order">
+    tools:context=".Functions.veterinarian.VeterinarianPaymentOrder">
+
+    <ImageButton
+        android:id="@+id/bnt_veterinarianOrder_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Appointment\nSummary"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/bnt_veterinarianOrder_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bnt_veterinarianOrder_back" />
+
+    <TextView
+        android:id="@+id/textView78"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Information Veterinarian"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/bnt_veterinarianOrder_back"
+        app:layout_constraintTop_toBottomOf="@+id/bnt_veterinarianOrder_back" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="83dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/veterinarian_profile"
+        app:layout_constraintStart_toStartOf="@+id/textView78"
+        app:layout_constraintTop_toBottomOf="@+id/textView78" />
+
+    <TextView
+        android:id="@+id/textView79"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Jaxson Calzoni"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView18"
+        app:layout_constraintTop_toTopOf="@+id/imageView18" />
+
+    <TextView
+        android:id="@+id/textView80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="One Stop Clinic"
+        app:layout_constraintStart_toStartOf="@+id/textView79"
+        app:layout_constraintTop_toBottomOf="@+id/textView79" />
+
+    <TextView
+        android:id="@+id/textView81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="No Appointment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView79" />
+
+    <TextView
+        android:id="@+id/textView82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="AP021"
+        app:layout_constraintEnd_toEndOf="@+id/textView81"
+        app:layout_constraintTop_toBottomOf="@+id/textView81" />
+
+    <TextView
+        android:id="@+id/textView83"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Order Detail"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView18"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView83">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView84"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Consultation" />
+
+            <TextView
+                android:id="@+id/textView85"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Application Free" />
+
+            <TextView
+                android:id="@+id/textView86"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Total" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView87"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="$10"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/textView88"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="$0.5"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/textView89"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textStyle="bold"
+                android:text="$10.5"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Contact Customer"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textView83"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout10" />
+
+    <TextView
+        android:id="@+id/textView91"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Amel Jane  +9905-1950"
+        app:layout_constraintStart_toStartOf="@+id/textView90"
+        app:layout_constraintTop_toBottomOf="@+id/textView90" />
+
+    <TextView
+        android:id="@+id/textView92"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Payment Method"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView90"
+        app:layout_constraintTop_toBottomOf="@+id/textView91" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="20dp"
+        android:gravity="center_vertical"
+        android:text="Paypal"
+        android:background="@drawable/rounded_rectangle"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView92"
+        app:layout_constraintTop_toBottomOf="@+id/textView92"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageButton
+        android:id="@+id/imageButton19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:background="@color/transparent"
+        android:src="@drawable/right_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="@+id/button4"
+        app:layout_constraintTop_toTopOf="@+id/button4" />
+
+    <TextView
+        android:id="@+id/textView93"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Sub Total"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bnt_veterinarian_checkout" />
+
+    <Button
+        android:id="@+id/bnt_veterinarian_checkout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:text="Checkout"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView94"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$109"
+        android:textStyle="bold"
+        android:textColor="@color/bnt_color"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bnt_veterinarian_checkout"
+        app:layout_constraintEnd_toEndOf="@+id/textView93"
+        app:layout_constraintStart_toStartOf="@+id/textView93" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,23 +10,25 @@ import android.widget.Button;
 
 import com.example.petlover.R;
 
-public class VeterinarianInfo extends AppCompatActivity {
+public class VeterinarianPaymentOrder extends AppCompatActivity {
 
-    public static VeterinarianInfo instance;
+    public static VeterinarianPaymentOrder instance;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_veterinarian_info);
+        setContentView(R.layout.activity_veterinarin_payment_order);
 
         instance = this;
 
         @SuppressLint({"MissingInflatedId", "LocalSuppress"})
-        Button bnt_create_appointment = findViewById(R.id.bnt_create_appointment);
-        bnt_create_appointment.setOnClickListener(new View.OnClickListener() {
+        Button bnt_veterinarian_checkout = findViewById(R.id.bnt_veterinarian_checkout);
+        bnt_veterinarian_checkout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(VeterinarianInfo.this, VeterinarianAppointment.class);
+                Intent intent = new Intent(VeterinarianPaymentOrder.this, VeterinarianSuccedPayment.class);
                 startActivity(intent);
+                finish();
             }
         });
     }
